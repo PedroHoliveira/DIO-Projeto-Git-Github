@@ -1,0 +1,137 @@
+GIT E GITHUB - DIO.
+
+RESUMO E TÓPICOS IMPORTANTES.
+
+GIT E GITHUB -- CONTROLE DE VERSÃO; ARMAZENAMENTO EM NUVEM; TRABALHO EM EQUIPE; MELHORAR SEU CÓDIGO; RECONHECIMENTO
+
+GIT: 
+	
+	GITBASH - CMD DO GIT
+	
+	GIT - SISTEMA DE VERSIONAMENTO DE CÓDIGO
+
+	GIT FUNCIONA COM CLI (LINHA DE COMANDO)
+	
+	FLAGS - COMPLEMENTOS AOS COMANDOS BÁSICOS
+	
+	SHA1 - Algoritmo de encriptação - gera uma chave de 40 caracteres para cada arquivo;
+		É criado uma chave para cada arquivo, pequenas mudanças mudam a chave; Se o arquivo for igual a chave é a mesma
+		
+		É uam forma de curta de representar um arquivo
+	
+		openssl sha1 <nomeArquivo> (mostra a chave sha1)
+	
+	O git detecta as mudanças dos arquivos atraves do sha1 das versões dos programas;
+	
+	
+	
+	
+	
+	
+	
+*Objetos internos do Git*
+	
+	Blobs(Bloco básico de composição):
+		Armazena os metadados de um arquivo;
+			Tipo do objeto (blob);
+			Tamanho do arquivo;
+			\0;
+			Conteudo do arquivo;
+			sha1 de um arquivo;
+			
+	Tree(Aponta para os blobs ou outras Tree):
+		Responsável para montar a estrutura dos arquivos.
+		Armazena metadados;
+		\0;
+		blob de um arquivo;
+		Armazena o sha1 do blob;
+		Nome do arquivo;
+	
+	Commit(Final de uma composição):
+		Aponta para uma Tree;
+		Para um parente (Ultimo commit realizado);
+		autor(quem fez o projeto);
+		mensagem(Explica o projeto);
+		timestamp(hora e data de criação);
+		Possuem sha1;
+		
+GITHUB: 
+
+	GITHUB - REPOSITÓRIO DE CÓDIGO	
+
+
+
+
+**COMANDOS BÁSICOS NO TERMINAL (CMD)**
+
+GITBASH:
+	-git init
+	
+	-git add
+	
+	-git commit
+
+	ls (lista de diretório)
+		ls -a (mostra arquivos ocultos)
+	
+	git status (Mostra o estado do arquivo)
+		
+	
+
+WINDOWS:
+	dir (Lista de diretórios)
+	
+	cd <nomePasta> (Navegar para uma pasta especifica)
+		EXEMPLO: cd Windows
+		
+	cd .. (Volta uma pasta a partir da atual)
+	
+	cls (Limpar o terminal)
+	
+	TAB - AUTOCOMPLETAR
+	
+	mkdir <nomePasta> - CRIA UMA PASTA
+	
+	echo <> - Printa na tela o que for digitado
+		echo <> > <nomeArquivo> (O QUE FOR DIGITADO NO ECHO, É TRANSCRITO PARA O ARQUIVO JÁ EXISTENTE OU QUE SERÁ CRIADO AUTOMATICAMENTE)
+	
+	del <nomeArquivo> (Deleta o arquivo - Se colocar o nome do diretório, todos os arquivos serão deletados)
+	
+	rmdir <nomeDiretorio> /S /Q (Deleta todo o diretório)
+	
+	openssl sha1 <nomeArquivo> (mostra a chave sha1)
+	
+Linux:
+	ls (Lista de diretórios)
+	
+	cd <nomePasta> (Navegar para uma pasta especifica)
+		EXEMPLO: cd etc
+	
+	cd .. (Volta uma pasta a partir da atual)
+
+	clear (Limpar o terminal) 
+		ATALHO PARA O CLEAR - crtl L (Limpar o terminal)
+	
+	mkdir <nomePasta> - CRIA UMA PASTA
+	
+	echo <> - Printa na tela o que for digitado
+		echo <> > <nomeArquivo> (O QUE FOR DIGITADO NO ECHO, É TRANSCRITO PARA O ARQUIVO JÁ EXISTENTE OU QUE SERÁ CRIADO AUTOMATICAMENTE)
+		
+	rm -rf <nomeDiretorio> (DELETA TODO O DIRETORIO)
+	
+	
+
+**CHAVE SSH E TOKEN - Autenticações seguras **
+
+Chave SSH é uma autenticação de uma maquina (pc) que fica associada a sua conta GITHUB;
+	Gera duas chaves uma publica que vai para o github, e outra privada que fica salva no computador apenas para o usuario;
+	Protocolo de criptografia;
+
+Token - Código de acesso pessoal para autenticação ao fazer mudanças no github em relação a repositorios;
+
+
+
+
+
+
+
